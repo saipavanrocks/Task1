@@ -1,0 +1,133 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:sans-serif
+    
+}
+header{
+    display:flex;
+    align-items: center;
+    padding: 0px 30px;
+    justify-content: space-between;
+    position:absolute;
+    top:30px;
+    color:white;
+    width:100%;
+}
+
+header .logo {
+    color:white;
+    text-transform: uppercase;
+}
+
+header nav i{
+    font-size: 25px;
+}
+
+.section-1{
+    /* background-image: url('../images/bg1.jpeg'); */
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/bg1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 800px; 
+    
+}
+
+.section-1 .content{
+    position: absolute;
+    left:10%;
+    top:50%; 
+    color:white;
+}
+
+.section-1 .content .text1{
+     font-size: 1.5rem;
+     padding-bottom: 10%;
+
+}
+
+.section-1 .content .text2{
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+/* cards-container */
+.cards-sec{
+    margin-top: -112px;
+}
+
+.cards-container{
+    display: flex;
+    padding: 0px 30px;
+    justify-content: center;
+    
+}
+
+.cards-container .card{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+    margin: 10px;
+    border-color: #d9d9d9;
+}
+
+.cards-container .card .card-head{
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin: 25px 0 0;
+
+}
+
+.cards-container .card span{
+    background-color:#ff214f;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.cards-container .card .card-text{
+    color:#808080;
+    font-style: italic;
+    margin: 18px 0 0;
+    line-height:30px;
+    font-family: 'Open Sans',sans-serif;
+    text-align: center;
+}
+.cards-container .card i{
+    font-size:40px;
+    margin: 0 auto; 
+    color:white;   
+
+}
+
+/* digital-block start */
+
+.digital-block{
+    display: flex;
+}
+
+.digital-block .card1{
+    background-image: url('../images/c1.jpeg');
+    height: 345px;
+    
+
+}
+
+/* media queries */
+@media(min-width:1402px){
+    header{
+        padding: 0px 100px;
+        width: 100%;
+    }
+    .section-1 .content{
+        position: absolute;
+        top:20%;
+        left:12%;
+    }
+    .cards-sec{
+        padding: 0 100px;
+    }
+
+}
