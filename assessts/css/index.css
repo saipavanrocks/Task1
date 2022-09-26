@@ -74,6 +74,8 @@ header nav i{
     background-color: #eee;
     margin: 10px;
     border-color: #d9d9d9;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .cards-container .card .card-head{
@@ -96,6 +98,7 @@ header nav i{
     line-height:30px;
     font-family: 'Open Sans',sans-serif;
     text-align: center;
+    padding: 0px 15px;
 }
 .cards-container .card i{
     font-size:40px;
@@ -258,7 +261,7 @@ header nav i{
     justify-content: center;
   }
   .img-container *{
-    padding: 15px;
+    margin:5px;
   }
   .image-card{
     height: 300px;
@@ -277,8 +280,40 @@ header nav i{
     letter-spacing: 1px;
     font-weight: 600;
     font-size: 1.125rem;
-  }
+}
 
+/* why choose us */
+
+.why-choose-us-section-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+  
+.why-choose-us-section-container h5{
+    margin: 55px 0 0;
+    letter-spacing: 1px;
+    font-size: 1.125rem;
+}
+  
+.why-choose-us-section-container ol{
+    font-style: italic;
+    line-height: 2;
+    margin: 15px 0 55px;
+    padding-left: 20px;
+}
+
+.why-choose-us-section-container .values-card{
+    margin-right: 70px;
+}
+
+.why-choose-us-section-container img{
+    margin-left: 70px;
+}
+  
 
 /* skilled Designers */
 .desig-sec{
@@ -334,25 +369,164 @@ header nav i{
 
 }
 
+/* simply products section start */
+.simply_prod{
+    background-image: url('../images/bg4.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+   
+}
+
+.simply_prod .content-container{
+    min-height: 574px;
+    width: 800px;
+   
+
+}
+
+.content-container .text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+      
+}
+
+/* our services */
+
+.our-services-container{
+    background-image: url("../images/bg4.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 600px;
+}
+
+.our-services-card{
+    border: 1px solid white;
+    padding: 40px;
+    width: 50%;
+ }
+
+.our-services-container h5{
+    color: #ff214f;
+    margin: 30px 60px 40px;
+    font-size: 18px;
+}
+
+.our-services-container h2{
+    font-size: 2.5rem;
+    margin: 30px 60px 40px;
+    font-weight: bold;
+    color: white;
+}
+
+/* conatct us section */
+  
+.contact-us-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 70px;
+}
+  
+.contact-us-card *{
+    display: flex;
+    flex-direction: column;
+}
+  
+.contact-us-card h2{
+    font-weight: bold;
+    margin: 50px 0 0;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.contact-us-card p{
+    line-height: 2;
+    font-size: 16px;
+    padding: 10px;
+}
+  
+.contact-us-card a{
+    font-size: 16px;
+    color: #ffa6b9;
+    text-decoration: none;
+    
+}
+
+.embed-responsive-item{
+    height: 350px;
+    width: 400px;
+}
+
+/* footer section */
+  
+.footer-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+    background-color: #333333;
+    color: #ffffff;
+    line-height: 1;
+    text-align: center;
+}
+
+.footer-section div h3{
+    margin: 10px 0 0;
+    font-weight: 400;
+    font-size: 20px;
+}
+  
+.footer-section div p{
+    margin: 10px 0 0;
+    font-size: 16px;
+    font-size: 20px;
+    
+}
+
 
 /* media queries */
-@media(min-width:1402px){
-    header .menu{
+@media(min-width:1400px){
+    header .menu,  .img-container, .skills-container{
         padding: 0px 100px;
         width: 100%;
     }
     .section-1 .content{
         position: absolute;
         top:20%;
-        left:12%;
+        left:23%;
     }
     .cards-sec{
         padding: 0 100px;
     }
-    .skills-container{
-        width: 1120px;
+    
+
+}
+
+@media (min-width:1800px) {
+
+    .chose-us, .skills-container{
+        padding: 50px 200px;
+    }
+    header .menu, .chose-us{
+        padding: 0px 330px;
+        width: 100%;
     }
 
+    .cards-sec{
+        padding: 0 300px;
+    }
+    
 }
 
 
